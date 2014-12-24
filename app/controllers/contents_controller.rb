@@ -4,6 +4,6 @@ class ContentsController < ApplicationController
   def index
     @contents = Content.all
 
-    render json: @contents
+    render body: @contents.first.json, content_type: 'application/json'
   end
 end
