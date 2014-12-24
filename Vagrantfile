@@ -24,6 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |vagrant_config|
 
   with vagrant_config do
     install_atom
+    install_chrome
     install_gpg                                         # needed to sign git commits
     install_git                                         # source is on github
     install_github_for_mac
