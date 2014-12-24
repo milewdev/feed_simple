@@ -31,6 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |vagrant_config|
     install_homebrew                                    # needed to install ruby
     install_ruby '2.1.2'
     install_bundler
+    install_heroku_toolbelt
     git_clone PROJECT_GITHUB_URL, PROJECT_VM_DIR
     cd PROJECT_VM_DIR do
       bundle_install
