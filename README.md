@@ -27,17 +27,15 @@ $ fg
 $
 ```
 
-
-###Code Notes
-
-The application was created using [rails-api](https://github.com/rails-api/rails-api)
-and therefore serves json responses.
-
 The feed_simple:load task should be run say once every hour using something like
 [cron](http://en.wikipedia.org/wiki/Cron) or [Heroku
 Scheduler](https://devcenter.heroku.com/articles/scheduler).
 
-The application works as follows:
+
+###Code Notes
+
+The application was created using [rails-api](https://github.com/rails-api/rails-api)
+and therefore serves json responses.  It works as follows:
 
 - rake task feed_simple:load deletes all records from the Contents table,
 retrieves XML data from the RSS feed url, converts the XML to JSON, and stores
